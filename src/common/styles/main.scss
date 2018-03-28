@@ -1,0 +1,9 @@
+:global(.topmain) {
+  .el-container {
+    height: 100%;
+    .el-header {
+      border-bottom: 1px solid #ebf3fc;
+      padding: 20px;
+    }
+  }
+}

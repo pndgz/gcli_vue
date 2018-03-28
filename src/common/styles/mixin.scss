@@ -1,0 +1,32 @@
+@mixin size($w, $h) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+}
+@mixin bradius($r) {
+  border-radius: $r;
+}
+@mixin absblock($l: auto, $t: auto, $r: auto, $b: auto, $type: absolute) {
+  position: $type;
+  left: $l;
+  top: $t;
+  right: $r;
+  bottom: $b;
+}
+@mixin fleft {
+  float: left;
+  display: inline-block;
+}
+@mixin fright {
+  float: right;
+  display: inline-block;
+}
+@mixin clearfix {
+  &::after, &::before {
+    display: table;
+    content: ""
+  }
+  &::after {
+    clear: both
+  }
+}

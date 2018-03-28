@@ -1,0 +1,72 @@
+@import "vars";
+@import "mixin";
+
+html, body {
+  color: #333;
+}
+a {
+  color: $theme-color;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+.hidden {
+  display: none !important;
+}
+.tright {
+  text-align: right;
+}
+.tleft {
+  text-align: left;
+}
+.clearfix {
+  &::after, &::before {
+    display: table;
+    content: ""
+  }
+  &::after {
+    clear: both
+  }
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.mrg {
+  &-b-10 {
+    margin-bottom: 10px;
+  }
+  &-t-10 {
+    margin-top: 10px;
+  }
+  &-b-n {
+    margin-bottom: 0;
+  }
+  &-t-20 {
+    margin-top: 20px;
+  }
+}
+.pd {
+  &-10 {
+    padding: 10px;
+  }
+  &-20 {
+    padding: 20px;
+  }
+  &-t-20 {
+    padding-top: 20px;
+  }
+}
+.vtop {
+  vertical-align: top;
+}
+table .cell .ops a {
+  margin: 0 10px;
+}
+.el-dialog .pagination {
+  margin-top: 20px;
+  text-align: right;
+}

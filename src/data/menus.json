@@ -1,0 +1,47 @@
+[
+  {
+    "idx": "frontend",
+    "name": "用户系统",
+    "submenus": [
+      {
+        "idx": "userlist",
+        "name": "用户管理",
+        "icon": "iconfont icon-user",
+        "route": "/user/list"
+      }
+    ]
+  },
+  {
+    "idx": "backend",
+    "name": "管理后台",
+    "submenus": [
+      {
+        "idx": "sysadmin",
+        "name": "管理员管理",
+        "icon": "iconfont icon-admin",
+        "route": "/admin/list"
+      },
+      {
+        "idx": "settings",
+        "name": "系统设置",
+        "icon": "iconfont icon-setting",
+        "hasChildren": true,
+        "submenus": [
+          {
+            "idx": "global",
+            "name": "全局配置",
+            "icon": "el-icon-menu",
+            "route": "/settings/global",
+            "check": true
+          },
+          {
+            "idx": "personal",
+            "name": "个人设置",
+            "icon": "el-icon-menu",
+            "route": "/settings/personal"
+          }
+        ]
+      }
+    ]
+  }
+]

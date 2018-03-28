@@ -1,0 +1,15 @@
+.detail_table {
+  table {
+    margin: 20px 0;
+    border-collapse: collapse;
+    border: none;
+    tr {
+      height: 40px;
+      td {
+        border: 1px solid #cccccc;
+        text-align: center;
+        font:12px arial,sans-serif;
+      }
+    }
+  }
+}
